@@ -28,10 +28,14 @@ public class Produit implements Serializable {
     private String nom;
 
     @Column(nullable = false)
-    private LocalDateTime dateCreation;
+//    private LocalDateTime dateCreation;
 
     @Column(nullable = false)
     private LocalDateTime dateModification;
+
+    @ManyToOne
+    @JoinColumn(name = "marque_id")
+    private Marque marque;
 
     @PrePersist
     public void prePersist(){
