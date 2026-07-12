@@ -9,7 +9,6 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.math.BigDecimal;
 import java.util.Objects;
-import en.edu.ucak.entites.Marque;
 
 @Entity
 @Getter
